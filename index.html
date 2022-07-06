@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Password</title>
+
+	<script type="text/javascript">
+		function checkpassword() {
+
+			var password = document.getElementById("passwordbox");
+			var passwordText = password.value;
+			if (passwordText == "AB345") {
+
+				return true;
+			}
+
+			else{
+
+				alert ("Access Denied")
+				return false;
+			}
+
+		}
+
+		
+	</script>
+</head>
+<body>
+
+	<p style="font-size: 50px;"> Welcome!</p>
+	<p> Please enter the password</p>
+	<p> Password: <input id="passwordbox" type="password" name=""></p>
+	<a href="brickypage1.html" onclick="return checkpassword();">Click here to submit password and view the website</a>
+</body>
+</html>
